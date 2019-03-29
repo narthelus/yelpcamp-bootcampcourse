@@ -16,7 +16,9 @@ const commentRoutes = require("./routes/comments"),
 
 //process.env.DATABASEURL = "mongodb://127.0.0.1:27017/yelp_camp";
 //DB Connection
-mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
+let default_url =
+  process.env.DATABASEURL || "mongodb://127.0.0.1:27017/yelp_camp";
+mongoose.connect(default_url, { useNewUrlParser: true });
 /* mongoose.connect(
   "mongodb+srv://adminyelp:RMaf11261620$@yelpcamp-8vuln.azure.mongodb.net/yelp_camp?retryWrites=true",
   {
