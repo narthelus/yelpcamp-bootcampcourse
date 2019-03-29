@@ -56,9 +56,10 @@ app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
 //Listen
+//For Heroku Deploy
 app.listen(process.env.PORT, process.env.IP);
-/*
+
+//For local testing
 app.listen(3000, "localhost", () => {
   console.log("Server Initialized.");
 });
-*/
