@@ -14,7 +14,7 @@ const commentRoutes = require("./routes/comments"),
   campgroundRoutes = require("./routes/campgrounds"),
   indexRoutes = require("./routes/index");
 
-process.env.DATABASEURL = "mongodb://127.0.0.1:27017/yelp_camp";
+//process.env.DATABASEURL = "mongodb://127.0.0.1:27017/yelp_camp";
 //DB Connection
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
 /* mongoose.connect(
